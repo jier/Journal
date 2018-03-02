@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jier.journal.InputActivity">
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="397dp"
+        android:layout_height="32dp"
+        android:layout_weight="0.05"
+        android:hint="@string/title"
+        android:paddingHorizontal="150dp"
+        android:text="" tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/editMood"
+        android:layout_width="397dp"
+        android:layout_height="32dp"
+        android:layout_weight="0.05"
+        android:hint="@string/mood"
+        android:paddingHorizontal="150dp"
+        android:layout_gravity="center_horizontal"
+        android:text="" tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/editContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:ems="10"
+        android:hint="@string/content"
+        android:includeFontPadding="false"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="150dp"
+        android:text=""
+        android:gravity="top|start"
+        android:textAlignment="textStart"
+        android:textColorLink="@android:color/background_dark"
+        android:textDirection="ltr"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_weight="0.1"
+        android:text="@string/button" />
+</LinearLayout>
